@@ -1,0 +1,206 @@
+$highlight: #f56714;
+$main: #545454;
+$links: #3d98c8;
+
+* { //padding doesn't effect the width of the columns  
+	box-sizing: border-box; 
+}
+
+html, body {
+	font-family: arial;
+}
+.bold {
+	font-weight: bold;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.wrapper {
+	width: 1440px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+#top-header {
+	padding: 1.5em 0;
+
+	.first-line-info {
+		display: flex;
+    	justify-content: flex-end;
+    	#phone-number {
+    		margin: 0;
+    		color: #999999;
+    		font-weight: bold;
+    	}
+    	#user-info {
+    		margin-left: 10%;
+    		a {
+    			margin-right: 10px;
+    			font-weight: bold;
+    			color: $main;
+    		}
+    	}
+	}
+
+	.languages {
+		text-align: right;
+    	margin-top: -20px;
+   		font-weight: bold;
+   		a:first-child {
+   			color: $links;
+   		}
+   		a:last-child {
+   		
+   			color: #999999;
+   		}
+	}
+}
+
+#main-header {
+	display: flex;
+	line-height: 30px;
+	#home{
+		height: 30px;
+		margin-right: 1vw;
+	}
+
+	a {
+		margin: 0 8px;
+		color: #777;
+		font-weight: bold;
+		text-decoration: none;
+		font-size: 14px;
+		&:hover {
+			color: $highlight;
+		}
+
+	}
+	#home {
+		background-image: url(../img/home.svg);
+		background-repeat: no-repeat;
+    	background-size: contain;
+    	width: 30px;
+		&:hover {
+			background-image: url(../img/home-hover.svg);
+			background-repeat: no-repeat;
+    		background-size: contain;
+		}
+	}
+}
+
+#bedrijfsdocumenten, #ubo-documenten {
+	.active {
+		
+		color: white;
+		
+		background-image: url(../img/arrow-rect.svg);
+	}
+	ul{
+		display: flex;
+		padding: 0;
+		li {
+			list-style-type: none;
+    		padding: 15px 30px;
+    		background-color: #ccc;
+    		
+    		a {
+    			color: #555555;
+    			text-decoration: none;
+    			font-size: 14px;
+    			font-weight: bold;
+    		}	
+    	}
+		
+		
+	}
+	
+	p#info-bedrijfsnaam,p {
+			font-size: 14px;
+    		line-height: 16px;
+    		color: #545454;
+    		line-height: 21px;
+		}
+	.checkbox-wrapper {
+		display: flex;
+
+		input[type="checkbox"] {
+		width: 20px;
+  		height: 20px;
+  		margin-right: 10px;
+  		margin-top: 10px;
+	}
+		a#add-maatschapij {
+			color: $links;
+			line-height: 40px;
+			font-size: 14px;
+		}
+	}
+
+	.upload-card {
+		    .row {
+		    	width: 100%;
+		    }
+				.container-card {
+					float: left;
+					margin-right: 2.5%;
+					text-align: center;
+					width: 30%;
+					margin: 10px 10px;
+					background-color: #ededed;
+
+					border: 1px solid #ccc;
+					margin: 20px 10px;
+					.title-upload-card {
+						font-size: 14px;
+			    		line-height: 18px;
+			    		color: #f56714;
+			    		font-weight: bold;	
+					}
+					#upload-btn {
+						background-color: $highlight;
+					    border: none;
+					    color: white;
+					    padding: 10px 15px;
+					    text-align: center;
+					    text-decoration: none;
+					    display: inline-block;
+					    font-size: 15px;
+					    border-radius: 4px;
+					}
+					.doc-uploaded{
+						display: flex;
+						justify-content: center;
+						img {
+							width: 25px;
+							height: 25px;
+							margin-top: 6px;
+							margin-left: 6px;
+					}
+					}
+			}
+	}
+	.buttons-wrapper {
+		float: right;
+		margin: 30px 10px;
+		#wijzigen-btn, #volgende-btn {
+			background-color: $highlight;
+		    border: none;
+		    color: white;
+		    padding: 10px 25px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 15px;
+		    margin-right: 30px;
+		}
+		#volgende-btn {
+			background-color: #545454;
+		}
+	}
+
+}
+
+
