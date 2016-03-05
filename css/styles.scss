@@ -2,8 +2,8 @@ $highlight: #f56714;
 $main: #545454;
 $links: #3d98c8;
 
-* { //padding doesn't effect the width of the columns  
-	box-sizing: border-box; 
+* { //padding doesn't effect the width of the columns
+	box-sizing: border-box;
 }
 
 html, body {
@@ -53,7 +53,7 @@ html, body {
    			color: $links;
    		}
    		a:last-child {
-   		
+
    			color: #999999;
    		}
 	}
@@ -93,9 +93,9 @@ html, body {
 
 #bedrijfsdocumenten, #ubo-documenten {
 	.active {
-		
+
 		color: white;
-		
+
 		background-image: url(../img/arrow-rect.svg);
 	}
 	ul{
@@ -105,18 +105,18 @@ html, body {
 			list-style-type: none;
     		padding: 15px 30px;
     		background-color: #ccc;
-    		
+
     		a {
     			color: #555555;
     			text-decoration: none;
     			font-size: 14px;
     			font-weight: bold;
-    		}	
+    		}
     	}
-		
-		
+
+
 	}
-	
+
 	p#info-bedrijfsnaam,p {
 			font-size: 14px;
     		line-height: 16px;
@@ -139,25 +139,23 @@ html, body {
 		}
 	}
 
-	.upload-card {
-		    .row {
-		    	width: 100%;
-		    }
+	.row {
+		    display: flex;
 				.container-card {
-					float: left;
 					margin-right: 2.5%;
+					padding: 10px;
 					text-align: center;
 					width: 30%;
-					margin: 10px 10px;
 					background-color: #ededed;
-
 					border: 1px solid #ccc;
 					margin: 20px 10px;
+
 					.title-upload-card {
 						font-size: 14px;
-			    		line-height: 18px;
-			    		color: #f56714;
-			    		font-weight: bold;	
+			    	line-height: 18px;
+			    	color: #f56714;
+			    	font-weight: bold;
+						height: 37px;
 					}
 					#upload-btn {
 						background-color: $highlight;
@@ -202,5 +200,3 @@ html, body {
 	}
 
 }
-
-

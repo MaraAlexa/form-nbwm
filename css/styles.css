@@ -95,40 +95,40 @@ html, body {
     color: #3d98c8;
     line-height: 40px;
     font-size: 14px; }
-#bedrijfsdocumenten .upload-card .row, #ubo-documenten .upload-card .row {
-  width: 100%; }
-#bedrijfsdocumenten .upload-card .container-card, #ubo-documenten .upload-card .container-card {
-  float: left;
-  margin-right: 2.5%;
-  text-align: center;
-  width: 30%;
-  margin: 10px 10px;
-  background-color: #ededed;
-  border: 1px solid #ccc;
-  margin: 20px 10px; }
-  #bedrijfsdocumenten .upload-card .container-card .title-upload-card, #ubo-documenten .upload-card .container-card .title-upload-card {
-    font-size: 14px;
-    line-height: 18px;
-    color: #f56714;
-    font-weight: bold; }
-  #bedrijfsdocumenten .upload-card .container-card #upload-btn, #ubo-documenten .upload-card .container-card #upload-btn {
-    background-color: #f56714;
-    border: none;
-    color: white;
-    padding: 10px 15px;
+#bedrijfsdocumenten .row, #ubo-documenten .row {
+  display: flex; }
+  #bedrijfsdocumenten .row .container-card, #ubo-documenten .row .container-card {
+    margin-right: 2.5%;
+    padding: 10px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    border-radius: 4px; }
-  #bedrijfsdocumenten .upload-card .container-card .doc-uploaded, #ubo-documenten .upload-card .container-card .doc-uploaded {
-    display: flex;
-    justify-content: center; }
-    #bedrijfsdocumenten .upload-card .container-card .doc-uploaded img, #ubo-documenten .upload-card .container-card .doc-uploaded img {
-      width: 25px;
-      height: 25px;
-      margin-top: 6px;
-      margin-left: 6px; }
+    width: 30%;
+    background-color: #ededed;
+    border: 1px solid #ccc;
+    margin: 20px 10px; }
+    #bedrijfsdocumenten .row .container-card .title-upload-card, #ubo-documenten .row .container-card .title-upload-card {
+      font-size: 14px;
+      line-height: 18px;
+      color: #f56714;
+      font-weight: bold;
+      height: 37px; }
+    #bedrijfsdocumenten .row .container-card #upload-btn, #ubo-documenten .row .container-card #upload-btn {
+      background-color: #f56714;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      border-radius: 4px; }
+    #bedrijfsdocumenten .row .container-card .doc-uploaded, #ubo-documenten .row .container-card .doc-uploaded {
+      display: flex;
+      justify-content: center; }
+      #bedrijfsdocumenten .row .container-card .doc-uploaded img, #ubo-documenten .row .container-card .doc-uploaded img {
+        width: 25px;
+        height: 25px;
+        margin-top: 6px;
+        margin-left: 6px; }
 #bedrijfsdocumenten .buttons-wrapper, #ubo-documenten .buttons-wrapper {
   float: right;
   margin: 30px 10px; }
