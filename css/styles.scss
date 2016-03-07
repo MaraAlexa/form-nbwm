@@ -2,6 +2,8 @@ $highlight: #f56714;
 $main: #545454;
 $links: #3d98c8;
 
+$type: active;
+
 * { //padding doesn't effect the width of the columns
 	box-sizing: border-box;
 }
@@ -20,13 +22,15 @@ html, body {
 
 .wrapper {
 	width: 1440px;
-	max-width: 90%;
+	max-width: 70%;
 	margin: 0 auto;
 }
-
+#logo-nbwm {
+	width: 475px;
+	height: 39px;
+}
 #top-header {
 	padding: 1.5em 0;
-
 	.first-line-info {
 		display: flex;
     	justify-content: flex-end;
@@ -36,19 +40,25 @@ html, body {
     		font-weight: bold;
     	}
     	#user-info {
+				background-color: #f3f3f3;
+				padding: 0 20px 0 30px;
     		margin-left: 10%;
     		a {
     			margin-right: 10px;
     			font-weight: bold;
     			color: $main;
+					text-decoration: none;
     		}
     	}
 	}
 
 	.languages {
 		text-align: right;
-    	margin-top: -20px;
-   		font-weight: bold;
+    margin-top: -20px;
+   	font-weight: bold;
+		 a {
+			 text-decoration: none;
+		 }
    		a:first-child {
    			color: $links;
    		}
@@ -62,6 +72,10 @@ html, body {
 #main-header {
 	display: flex;
 	line-height: 30px;
+	background-color: #f3f3f3;
+	width: 200%;
+	margin-left: -250px;
+	padding: 10px 0 10px 250px;
 	#home{
 		height: 30px;
 		margin-right: 1vw;
@@ -94,16 +108,26 @@ html, body {
 #bedrijfsdocumenten, #ubo-documenten {
 	.active {
 
-		color: white;
-
 		background-image: url(../img/arrow-rect.svg);
+		background-size: cover;
+		background-color: white;
+
+		a {
+			color: white;
+		}
+
 	}
 	ul{
 		display: flex;
 		padding: 0;
+		li:first-child {
+			@if $type == active {
+				background-color: #ccc;
+			}
+		}
 		li {
 			list-style-type: none;
-    		padding: 15px 30px;
+    		padding: 15px 37px;
     		background-color: #ccc;
 
     		a {
@@ -113,11 +137,9 @@ html, body {
     			font-weight: bold;
     		}
     	}
-
-
 	}
 
-	p#info-bedrijfsnaam,p {
+	p#info-bedrijfsnaam, #info-ubo, p {
 			font-size: 14px;
     		line-height: 16px;
     		color: #545454;
@@ -139,8 +161,23 @@ html, body {
 		}
 	}
 
+	#info-ubo {
+		.radio-btns {
+			margin-top: 15px;
+			margin-left: 30px;
+			#ja , #nee {
+				margin: 4px 4px 4px 15px;
+			}
+		}
+	}
+	#cards-wrapper{
+		margin: 0 6%;
+	}
 	.row {
 		    display: flex;
+				#single-card-container {
+					width: 26.5%;
+				}
 				.container-card {
 					margin-right: 2.5%;
 					padding: 10px;
@@ -182,17 +219,18 @@ html, body {
 	}
 	.buttons-wrapper {
 		float: right;
-		margin: 30px 10px;
+		margin: 40px 10px;
 		#wijzigen-btn, #volgende-btn {
 			background-color: $highlight;
 		    border: none;
 		    color: white;
-		    padding: 10px 25px;
+		    padding: 10px 15px;
 		    text-align: center;
 		    text-decoration: none;
 		    display: inline-block;
 		    font-size: 15px;
 		    margin-right: 30px;
+				border-radius: 4px;
 		}
 		#volgende-btn {
 			background-color: #545454;

@@ -13,8 +13,12 @@ html, body {
 
 .wrapper {
   width: 1440px;
-  max-width: 90%;
+  max-width: 70%;
   margin: 0 auto; }
+
+#logo-nbwm {
+  width: 475px;
+  height: 39px; }
 
 #top-header {
   padding: 1.5em 0; }
@@ -26,15 +30,20 @@ html, body {
       color: #999999;
       font-weight: bold; }
     #top-header .first-line-info #user-info {
+      background-color: #f3f3f3;
+      padding: 0 20px 0 30px;
       margin-left: 10%; }
       #top-header .first-line-info #user-info a {
         margin-right: 10px;
         font-weight: bold;
-        color: #545454; }
+        color: #545454;
+        text-decoration: none; }
   #top-header .languages {
     text-align: right;
     margin-top: -20px;
     font-weight: bold; }
+    #top-header .languages a {
+      text-decoration: none; }
     #top-header .languages a:first-child {
       color: #3d98c8; }
     #top-header .languages a:last-child {
@@ -42,7 +51,11 @@ html, body {
 
 #main-header {
   display: flex;
-  line-height: 30px; }
+  line-height: 30px;
+  background-color: #f3f3f3;
+  width: 200%;
+  margin-left: -250px;
+  padding: 10px 0 10px 250px; }
   #main-header #home {
     height: 30px;
     margin-right: 1vw; }
@@ -65,21 +78,26 @@ html, body {
       background-size: contain; }
 
 #bedrijfsdocumenten .active, #ubo-documenten .active {
-  color: white;
-  background-image: url(../img/arrow-rect.svg); }
+  background-image: url(../img/arrow-rect.svg);
+  background-size: cover;
+  background-color: white; }
+  #bedrijfsdocumenten .active a, #ubo-documenten .active a {
+    color: white; }
 #bedrijfsdocumenten ul, #ubo-documenten ul {
   display: flex;
   padding: 0; }
+  #bedrijfsdocumenten ul li:first-child, #ubo-documenten ul li:first-child {
+    background-color: #ccc; }
   #bedrijfsdocumenten ul li, #ubo-documenten ul li {
     list-style-type: none;
-    padding: 15px 30px;
+    padding: 15px 37px;
     background-color: #ccc; }
     #bedrijfsdocumenten ul li a, #ubo-documenten ul li a {
       color: #555555;
       text-decoration: none;
       font-size: 14px;
       font-weight: bold; }
-#bedrijfsdocumenten p#info-bedrijfsnaam, #bedrijfsdocumenten p, #ubo-documenten p#info-bedrijfsnaam, #ubo-documenten p {
+#bedrijfsdocumenten p#info-bedrijfsnaam, #bedrijfsdocumenten #info-ubo, #bedrijfsdocumenten p, #ubo-documenten p#info-bedrijfsnaam, #ubo-documenten #info-ubo, #ubo-documenten p {
   font-size: 14px;
   line-height: 16px;
   color: #545454;
@@ -95,8 +113,17 @@ html, body {
     color: #3d98c8;
     line-height: 40px;
     font-size: 14px; }
+#bedrijfsdocumenten #info-ubo .radio-btns, #ubo-documenten #info-ubo .radio-btns {
+  margin-top: 15px;
+  margin-left: 30px; }
+  #bedrijfsdocumenten #info-ubo .radio-btns #ja, #bedrijfsdocumenten #info-ubo .radio-btns #nee, #ubo-documenten #info-ubo .radio-btns #ja, #ubo-documenten #info-ubo .radio-btns #nee {
+    margin: 4px 4px 4px 15px; }
+#bedrijfsdocumenten #cards-wrapper, #ubo-documenten #cards-wrapper {
+  margin: 0 6%; }
 #bedrijfsdocumenten .row, #ubo-documenten .row {
   display: flex; }
+  #bedrijfsdocumenten .row #single-card-container, #ubo-documenten .row #single-card-container {
+    width: 26.5%; }
   #bedrijfsdocumenten .row .container-card, #ubo-documenten .row .container-card {
     margin-right: 2.5%;
     padding: 10px;
@@ -131,17 +158,18 @@ html, body {
         margin-left: 6px; }
 #bedrijfsdocumenten .buttons-wrapper, #ubo-documenten .buttons-wrapper {
   float: right;
-  margin: 30px 10px; }
+  margin: 40px 10px; }
   #bedrijfsdocumenten .buttons-wrapper #wijzigen-btn, #bedrijfsdocumenten .buttons-wrapper #volgende-btn, #ubo-documenten .buttons-wrapper #wijzigen-btn, #ubo-documenten .buttons-wrapper #volgende-btn {
     background-color: #f56714;
     border: none;
     color: white;
-    padding: 10px 25px;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
-    margin-right: 30px; }
+    margin-right: 30px;
+    border-radius: 4px; }
   #bedrijfsdocumenten .buttons-wrapper #volgende-btn, #ubo-documenten .buttons-wrapper #volgende-btn {
     background-color: #545454; }
 
