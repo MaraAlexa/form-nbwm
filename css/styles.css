@@ -21,7 +21,7 @@ html, body {
   height: 39px; }
 
 #top-header {
-  padding: 1.5em 0; }
+  padding: 10px 285px 10px 285px; }
   #top-header .first-line-info {
     display: flex;
     justify-content: flex-end; }
@@ -53,9 +53,8 @@ html, body {
   display: flex;
   line-height: 30px;
   background-color: #f3f3f3;
-  width: 200%;
-  margin-left: -250px;
-  padding: 10px 0 10px 250px; }
+  width: 100%;
+  padding: 10px 0 10px 280px; }
   #main-header #home {
     height: 30px;
     margin-right: 1vw; }
