@@ -58,9 +58,8 @@ html, body {
   background-color: #f3f3f3;
   width: 100%;
   padding: 10px 0 10px 280px; }
-  #main-header #home {
-    height: 30px;
-    margin-right: 1vw; }
+  #main-header .menu {
+    display: none; }
   #main-header a {
     margin: 0 8px;
     color: #777;
@@ -69,12 +68,14 @@ html, body {
     font-size: 14px; }
     #main-header a:hover {
       color: #f56714; }
-  #main-header #home {
+  #main-header #home-link {
+    height: 30px;
+    margin-right: 1vw;
     background-image: url(../img/home.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 30px; }
-    #main-header #home:hover {
+    #main-header #home-link:hover {
       background-image: url(../img/home-hover.svg);
       background-repeat: no-repeat;
       background-size: contain; }
@@ -174,5 +175,28 @@ html, body {
     border-radius: 4px; }
   #bedrijfsdocumenten .buttons-wrapper #volgende-btn, #ubo-documenten .buttons-wrapper #volgende-btn {
     background-color: #545454; }
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: block !important;
+    float: right; }
+    .menu i {
+      font-size: 1.5em;
+      color: #545454;
+      padding: 0.6em; }
+
+  #main-nav {
+    display: none; }
+
+  #main-nav.mobile-active {
+    display: block;
+    width: 100%; }
+    #main-nav.mobile-active a {
+      display: block;
+      padding: 1em 0; }
+
+  #main-header {
+    justify-content: flex-end;
+    padding: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
