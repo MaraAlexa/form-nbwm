@@ -12,11 +12,11 @@ html, body {
   display: table; }
 
 #nav-section {
-  width: 100%; }
+  width: 100%;
+  clear: both; }
 
 .wrapper {
-  width: 1440px;
-  max-width: 70%;
+  max-width: 950px;
   margin: 0 auto; }
 
 #logo-nbwm {
@@ -24,18 +24,25 @@ html, body {
   height: 39px; }
 
 #top-header {
-  padding: 10px 285px 10px 285px; }
+  height: 77px;
+  max-width: 950px;
+  margin: 0 auto;
+  padding-top: 20px; }
   #top-header .first-line-info {
+    position: absolute;
+    right: 11vw;
+    top: -2px;
+    width: auto;
+    line-height: 20px;
     display: flex;
-    justify-content: flex-end; }
+    padding-top: 5px; }
     #top-header .first-line-info #phone-number {
       margin: 0;
       color: #999999;
       font-weight: bold; }
     #top-header .first-line-info #user-info {
       background-color: #f3f3f3;
-      padding: 0 20px 0 30px;
-      margin-left: 10%; }
+      padding: 0 20px 0 30px; }
       #top-header .first-line-info #user-info a {
         margin-right: 10px;
         font-weight: bold;
@@ -52,30 +59,35 @@ html, body {
     #top-header .languages a:last-child {
       color: #999999; }
 
-#main-header {
+#nav-wrapper {
   display: flex;
   line-height: 30px;
   background-color: #f3f3f3;
   width: 100%;
-  padding: 10px 0 10px 280px; }
-  #main-header .menu {
+  position: relative;
+  min-height: 50px; }
+  #nav-wrapper #main-nav {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-right: 14%; }
+  #nav-wrapper .menu {
     display: none; }
-  #main-header a {
-    margin: 0 8px;
+  #nav-wrapper a {
     color: #777;
     font-weight: bold;
     text-decoration: none;
-    font-size: 14px; }
-    #main-header a:hover {
+    font-size: 14px;
+    padding: 15px 15px; }
+    #nav-wrapper a:hover {
       color: #f56714; }
-  #main-header #home-link {
+  #nav-wrapper #home-link {
     height: 30px;
     margin-right: 1vw;
     background-image: url(../img/home.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 30px; }
-    #main-header #home-link:hover {
+    #nav-wrapper #home-link:hover {
       background-image: url(../img/home-hover.svg);
       background-repeat: no-repeat;
       background-size: contain; }
@@ -177,26 +189,27 @@ html, body {
     background-color: #545454; }
 
 @media only screen and (max-width: 768px) {
-  .menu {
-    display: block !important;
-    float: right; }
-    .menu i {
-      font-size: 1.5em;
-      color: #545454;
-      padding: 0.6em; }
+  #nav-wrapper {
+    display: block; }
 
   #main-nav {
     display: none; }
 
+  .menu {
+    display: block !important;
+    float: right;
+    padding-bottom: 10px; }
+    .menu i {
+      font-size: 1.5em;
+      color: #545454; }
+
   #main-nav.mobile-active {
     display: block;
     width: 100%; }
+    #main-nav.mobile-active #home-link {
+      display: none; }
     #main-nav.mobile-active a {
       display: block;
-      padding: 1em 0; }
-
-  #main-header {
-    justify-content: flex-end;
-    padding: 0; } }
+      padding: 1em 0; } }
 
 /*# sourceMappingURL=styles.css.map */

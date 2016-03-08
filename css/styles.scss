@@ -22,11 +22,14 @@ html, body {
 
 #nav-section {
 	width: 100%;
+	clear: both;
+
 }
 
 .wrapper {
-	width: 1440px;
-	max-width: 70%;
+	max-width: 950px;
+	//width: 1440px;
+	//max-width: 70%;
 	margin: 0 auto;
 }
 #logo-nbwm {
@@ -34,10 +37,21 @@ html, body {
 	height: 39px;
 }
 #top-header {
-	padding: 10px 285px 10px 285px;
+	//new style
+	height: 77px;
+	max-width: 950px;
+	margin: 0 auto;
+	padding-top: 20px;
+
 	.first-line-info {
-		display: flex;
-    	justify-content: flex-end;
+		position: absolute;
+    right: 11vw;
+    top: -2px;
+    width: auto;
+    line-height: 20px;
+    display: flex;
+		padding-top: 5px;
+    //justify-content: flex-end;
     	#phone-number {
     		margin: 0;
     		color: #999999;
@@ -46,7 +60,7 @@ html, body {
     	#user-info {
 				background-color: #f3f3f3;
 				padding: 0 20px 0 30px;
-    		margin-left: 10%;
+    		//margin-left: 10%;
     		a {
     			margin-right: 10px;
     			font-weight: bold;
@@ -73,22 +87,31 @@ html, body {
 	}
 }
 
-#main-header {
+#nav-wrapper {
 	display: flex;
 	line-height: 30px;
 	background-color: #f3f3f3;
 	width: 100%;
-	padding: 10px 0 10px 280px;
+	position: relative;
+	min-height: 50px;
+
+	#main-nav {
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-right: 14%;
+	}
 
 	.menu {
 		display: none;
 	}
 	a {
-		margin: 0 8px;
+		//margin: 0 8px;
 		color: #777;
 		font-weight: bold;
 		text-decoration: none;
 		font-size: 14px;
+		padding: 15px 15px;
+
 		&:hover {
 			color: $highlight;
 		}
@@ -243,21 +266,31 @@ html, body {
 }
 
 @media only screen and (max-width: 768px) {
-	.menu {
-		display: block !important;
-		float: right;
-		i {
-			font-size: 1.5em;
-			color: #545454;
-			padding: 0.6em;
-		}
+
+	#nav-wrapper {
+		display: block;
 	}
+
 	#main-nav {
 		display: none;
 	}
+
+	.menu {
+		display: block !important;
+		float: right;
+		padding-bottom: 10px;
+		i {
+			font-size: 1.5em;
+			color: #545454;
+		}
+	}
+
 	#main-nav.mobile-active {
 		display: block;
 		width: 100%;
+		#home-link{
+			display: none;
+		}
 
 		a {
 			display: block;
@@ -265,9 +298,6 @@ html, body {
 
 		}
 	}
-	#main-header {
-		justify-content: flex-end;
-		padding: 0;
-	}
+
 
 }
