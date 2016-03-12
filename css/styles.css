@@ -70,15 +70,14 @@ html, body {
   min-height: 50px; }
   #nav-wrapper .menu {
     display: none; }
+  #nav-wrapper a {
+    color: #777;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 15px 15px; }
 
-a {
-  color: #777;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 14px;
-  padding: 15px 15px; }
-
-.highlight {
+#highlight {
   color: #f56714; }
 
 #main-nav {
