@@ -7,7 +7,6 @@ $type: active;
 * { //padding doesn't effect the width of the columns
 	box-sizing: border-box;
 }
-
 html, body {
 	font-family: arial;
 }
@@ -23,7 +22,6 @@ html, body {
 #nav-section {
 	width: 100%;
 	clear: both;
-
 }
 
 .wrapper {
@@ -32,6 +30,7 @@ html, body {
 	//max-width: 70%;
 	margin: 0 auto;
 }
+
 #logo-nbwm {
 	width: 475px;
 	height: 39px;
@@ -39,39 +38,22 @@ html, body {
 	position: absolute;
 	top: 20px;
 }
+
 #top-header {
-	//new style
 	height: 77px;
 	max-width: 950px;
 	margin: 0 auto;
 	padding-top: 20px;
-
 	.first-line-info {
     display: flex;
 		margin-top: -15px;
     justify-content: flex-end;
-    	#phone-number {
-    		margin: 0;
-    		color: #999999;
-    		font-weight: bold;
-    	}
-    	#user-info {
-				background-color: #f3f3f3;
-				padding: 0 20px 0 30px;
-    		//margin-left: 10%;
-    		a {
-    			margin-right: 10px;
-    			font-weight: bold;
-    			color: $main;
-					text-decoration: none;
-    		}
-    	}
 	}
-
 	.languages {
 		text-align: right;
     margin-top: 20px;
    	font-weight: bold;
+		padding-right: 2%;
 		 a {
 			 text-decoration: none;
 		 }
@@ -79,11 +61,27 @@ html, body {
    			color: $links;
    		}
    		a:last-child {
-
    			color: #999999;
    		}
 	}
 }
+
+#phone-number {
+	margin: 0;
+	color: #999999;
+	font-weight: bold;
+}
+#user-info {
+	background-color: #f3f3f3;
+	padding: 0 20px 0 30px;
+	a {
+		margin-right: 10px;
+		font-weight: bold;
+		color: $main;
+		text-decoration: none;
+	}
+}
+
 
 #nav-wrapper {
 	display: flex;
@@ -92,41 +90,35 @@ html, body {
 	width: 100%;
 	position: relative;
 	min-height: 50px;
-
-	#main-nav {
-		max-width: 1300px;
-		margin: 0 auto;
-		padding-right: 14%;
-	}
-
 	.menu {
 		display: none;
 	}
-	a {
-		color: #777;
-		font-weight: bold;
-		text-decoration: none;
-		font-size: 14px;
-		padding: 15px 15px;
-
-		&:hover {
-			color: $highlight;
-			background-color: white;
-		}
-	}
-	#home-link {
-		height: 30px;
-		//margin-right: 1vw;
-		background-image: url(../img/home.svg);
+}
+a {
+	color: #777;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 15px 15px;
+}
+ .highlight {
+	 color: $highlight;
+}
+#main-nav {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding-right: 14%;
+}
+#home-link {
+	height: 30px;
+	background-image: url(../img/home.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 30px;
+	&:hover {
+		background-image: url(../img/home-hover.svg);
 		background-repeat: no-repeat;
-    background-size: contain;
-    width: 30px;
-		&:hover {
-			background-image: url(../img/home-hover.svg);
-			background-repeat: no-repeat;
-    	background-size: contain;
-		}
-
+		background-size: contain;
 	}
 }
 //nav-bar documenten
@@ -136,13 +128,11 @@ html, body {
 		background-size: cover;
 		background-color: white;
 		background-color: transparent;
-
 		a {
 			color: white;
 		}
-
 	}
-	ul{
+	ul {
 		display: flex;
 		padding: 0;
 		li:first-child {
@@ -154,7 +144,6 @@ html, body {
 			list-style-type: none;
     		padding: 15px 37px;
     		background-color: #ccc;
-
     		a {
     			color: #555555;
     			text-decoration: none;
@@ -165,110 +154,108 @@ html, body {
 	}
 }
 
-
 //extra info user and add ubo/bedrijf
-	p#info-bedrijfsnaam, #info-ubo, p {
+p#info-bedrijfsnaam, #info-ubo, p {
 			font-size: 14px;
     		line-height: 16px;
     		color: #545454;
-    		line-height: 21px;
-		}
-	.checkbox-wrapper {
-		display: flex;
+}
 
-		input[type="checkbox"] {
+.checkbox-wrapper {
+	display: flex;
+	input[type="checkbox"] {
 		width: 20px;
-  		height: 20px;
-  		margin-right: 10px;
-  		margin-top: 10px;
-	}
+		height: 20px;
+		margin-right: 10px;
+		margin-top: 10px;
+  }
 		a#add-maatschapij {
 			color: $links;
 			line-height: 40px;
 			font-size: 14px;
 		}
-	}
-
-	#info-ubo {
-		.radio-btns {
-			margin-top: 15px;
-			margin-left: 30px;
-			#ja , #nee {
-				margin: 4px 4px 4px 15px;
-			}
+}
+//input ubo info
+#info-ubo {
+	.radio-btns {
+		margin-top: 15px;
+		margin-left: 30px;
+		#ja , #nee {
+			margin: 2px 4px 4px 15px;
 		}
 	}
+}
 
 	// the cards
-	#cards-wrapper{
-		margin: 0 6%;
-	}
-	#title-upload-card {
-		font-size: 14px;
-		line-height: 18px;
-		color: #f56714;
-		font-weight: bold;
-		height: 37px;
-	}
-	#upload-btn {
-		background-color: $highlight;
-			border: none;
-			color: white;
-			padding: 10px 15px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 15px;
-			border-radius: 4px;
-	}
-	.row {
-		display: flex;
-			#single-card-container {
-				width: 26.4%;
-			}
-			.container-card {
-				width: 30%;
-				margin-right: 2.5%;
-				padding: 10px;
-				text-align: center;	//width: 30%;
-				background-color: #ededed;
-				border: 1px solid #ccc;
-				margin: 20px 10px;
+#cards-wrapper{
+	margin: 0 6%;
+}
+#title-upload-card {
+	font-size: 14px;
+	line-height: 18px;
+	color: #f56714;
+	font-weight: bold;
+	height: 37px;
+}
+#upload-btn {
+	background-color: $highlight;
+		border: none;
+		color: white;
+		padding: 10px 15px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 15px;
+		border-radius: 4px;
+}
+.row {
+	display: flex;
+		#single-card-container {
+			width: 26.4%;
+		}
+		.container-card {
+			width: 30%;
+			margin-right: 2.5%;
+			padding: 10px;
+			text-align: center;	//width: 30%;
+			background-color: #ededed;
+			border: 1px solid #ccc;
+			margin: 20px 10px;
 
-			.doc-uploaded{
-				display: flex;
-				justify-content: center;
-				img {
-					width: 25px;
-					height: 25px;
-					margin-top: 6px;
-					margin-left: 6px;
-			}
-			}
+		.doc-uploaded {
+			display: flex;
+			justify-content: center;
+			img {
+				width: 25px;
+				height: 25px;
+				margin-top: 6px;
+				margin-left: 6px;
+		  }
 		}
 	}
+}
 
 	//the wijzigen/volgende btns
-	.buttons-wrapper {
-		float: right;
-		margin: 40px 10px;
-		#wijzigen-btn, #volgende-btn {
-			background-color: $highlight;
-	    border: none;
-	    color: white;
-	    padding: 10px 15px;
-	    text-align: center;
-	    text-decoration: none;
-	    display: inline-block;
-	    font-size: 15px;
-	    margin-right: 30px;
-			border-radius: 4px;
-			width: 100px;
-		}
-		#volgende-btn {
-			background-color: #545454;
-		}
+.buttons-wrapper {
+	float: right;
+	margin: 40px 10px;
+	#wijzigen-btn, #volgende-btn {
+		background-color: $highlight;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 30px;
+		border-radius: 4px;
+		width: 100px;
 	}
+	#volgende-btn {
+		background-color: #545454;
+	}
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -318,7 +305,9 @@ html, body {
 }
 
 @media only screen and (max-width: 650px) {
-
+	.languages, .first-line-info, #phone-number {
+		font-size: 12px;
+	}
 	#logo-nbwm {
 		width: 55%;
     height: 3%;
@@ -328,10 +317,20 @@ html, body {
 	.row {
 		margin: 0;
 	}
+  //space for logo on top of the main links
+	#main-nav {
+		padding-top: 8%;
+		line-height: 14px;
+	}
 	#title-upload-card {
 		height: 20px;
+		font-size: 12px;
 	}
-	//display block
+	//navbar links smaller
+	#bedrijfsdocumenten ul li a {
+		font-size: 12px;
+	}
+	//display block the cards
 	#bedrijfsdocumenten .row #single-card-container {
 		width: 68.5%;
 		margin: 15px auto;
@@ -343,5 +342,44 @@ html, body {
 	#ubo-documenten .row#cards-wrapper .container-card{
 		width: 68.5%;
 		margin:15px auto;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	#logo-nbwm {
+		width: 55%;
+    height: 3%;
+    top: 14.6vh;
+	}
+
+	p#info-bedrijfsnaam, p#info-ubo, p, .radio-btns {
+		font-size: 12px;
+	}
+
+	//navbar links smaller & add ubo/bedrijf line smaller
+	#bedrijfsdocumenten ul li a, #ubo-documenten ul li a, .checkbox-wrapper a#add-maatschapij {
+		font-size: 10px;
+	}
+
+	//upload btn smaller
+	#upload-btn {
+		font-size: 11px;
+	}
+ // main-links smaller
+	#nav-wrapper a {
+		font-size: 10px;
+	}
+ //the outside-card btns smaller
+  .buttons-wrapper #wijzigen-btn, .buttons-wrapper #volgende-btn {
+		font-size: 12px;
+	}
+//radio-btns style
+	.radio-btns {
+		margin-right: 15px;
+	}
+
+	.checkbox-wrapper input[type="checkbox"] {
+		width: 15px;
+		height: 17px;
 	}
 }
