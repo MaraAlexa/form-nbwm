@@ -1,0 +1,21 @@
+{
+  "name": "form-nbwm",
+  "homepage": "https://github.com/MaraAlexa/form-nbwm",
+  "authors": [
+    "MaraAlexa <maraalexa57@gmail.com>"
+  ],
+  "description": "form for submitting documents",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~1.4.0"
+  }
+}

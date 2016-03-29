@@ -1,0 +1,26 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<dom-module id="upload-card">
+  <template>
+    <div class="row" >
+      <div class="container-card" id="single-card-container">
+        <p id="title-upload-card">Uittreksel van Kamer van Koophandel</p>
+        <p>van</p>
+        <p class="bold">Hier BedrijfsNaam</p>
+        <button class="upload" id="upload-btn">
+          UPLOAD
+        </button>
+        <p>naamVanDeDocument.jpg</p>
+        <div class="doc-uploaded">
+          <p class="bold">uploaded!</p>
+          <img src="../img/checked-sign.svg">
+        </div>
+      </div>
+    </div>
+
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: 'upload-card'
+  });
+</script>
